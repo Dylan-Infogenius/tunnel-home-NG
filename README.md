@@ -10,4 +10,4 @@ https://github.com/Dylan-Infogenius/tunnel-home-NG
 ```
 
 ## Add-ons in this repository
- - **[homeng_tunnel](/samba-backup/README.md)**: Create snapshots and store them on a Samba share.
+ - **[homeng_tunnel](/homeng_tunnel/README.md)**: Create snapshots and store them on a Samba share.
