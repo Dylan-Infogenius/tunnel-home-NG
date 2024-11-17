@@ -1,6 +1,6 @@
 ---
 name: Home-NG Tunneling
-version: 0.0.6
+version: 0.0.7
 slug: home-ng_tunneling
 description: Create tunnel
 url: https://github.com/Dylan-Infogenius/tunnel-home-NG/tree/main/homeng_tunnel
@@ -19,6 +19,8 @@ stdin: true
 
 
 init: false
+host_network: true 
+privileged: true   
 options:
   server_public_key: "demo-key"
   endpoint: "vpn01.home-ng.app"
