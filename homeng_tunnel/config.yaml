@@ -1,6 +1,6 @@
 ---
 name: Home-NG Tunneling
-version: 0.0.7
+version: 0.0.8
 slug: home-ng_tunneling
 description: Create tunnel
 url: https://github.com/Dylan-Infogenius/tunnel-home-NG/tree/main/homeng_tunnel
@@ -16,11 +16,18 @@ homeassistant_api: true
 hassio_api: true
 hassio_role: manager
 stdin: true
-
-
 init: false
-host_network: true 
-privileged: true   
+ports:
+  80/tcp: null
+  51820/udp: 51820
+ports_description:
+  80/tcp: WireGuard peers status API
+  51820/udp: "WireGuard: forward this port in your router"
+hassio_api: true
+privileged:
+  - NET_ADMIN
+devices:
+  - /dev/net/tun
 options:
   server_public_key: "demo-key"
   endpoint: "vpn01.home-ng.app"
