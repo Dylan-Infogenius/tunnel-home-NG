@@ -1,7 +1,7 @@
 ---
 name: Home-NG Tunneling
-version: 0.0.1
-slug: samba_backup
+version: 0.0.2
+slug: homeng-tunnel
 description: Create tunnel
 url: https://github.com/Dylan-Infogenius/tunnel-home-NG/tree/main/homeng_tunnel
 arch:
