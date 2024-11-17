@@ -1,0 +1,26 @@
+---
+name: Home-NG Tunneling
+version: 0.0.1
+slug: samba_backup
+description: Create tunnel
+url: https://github.com/Dylan-Infogenius/tunnel-home-NG/tree/main/homeng_tunnel
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+startup: application
+boot: auto
+homeassistant_api: true
+hassio_api: true
+hassio_role: manager
+stdin: true
+
+init: false
+schema:
+  server_public_key: str
+  endpoint: str
+  client_ip: str
+  server_ip: str
+  log_level: list(debug|info|warning|error)?
