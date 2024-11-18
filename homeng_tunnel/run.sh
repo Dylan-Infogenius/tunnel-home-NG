@@ -4,17 +4,17 @@ INSTALL_FLAG="/data/installed"
 
 # Vérifier si le hook d'installation doit être exécuté
 if [ ! -f "$INSTALL_FLAG" ]; then
-    echo "Exécution du script d'installation..."
+    echo "$(date +%d/%m/%y\ %H:%M:%S) Exécution du script d'installation..."
     /install.sh
     if [ $? -eq 0 ]; then
         touch "$INSTALL_FLAG"
     else
-        echo "Erreur lors de l'installation. Arrêt de l'add-on."
+        echo "$(date +%d/%m/%y\ %H:%M:%S) Erreur lors de l'installation. Arrêt de l'add-on."
         exit 1
     fi
 fi
 
-echo "Démarrage de l'add-on..."
+echo "$(date +%d/%m/%y\ %H:%M:%S) Démarrage de l'add-on..."
 
 CONFIG_PATH=/data/options.json
 
@@ -25,7 +25,7 @@ DATA_FILE="/data/data.json"
 
 # Vérifier si l'installation a été effectuée
 if [ ! -f "$PRIVATE_KEY_FILE" ] || [ ! -f "$SERVER_PUBLIC_KEY_FILE" ] || [ ! -f "$ENDPOINT_FILE" ]; then
-    echo "Erreur : L'installation n'a pas été correctement effectuée. Exécutez à nouveau l'installation."
+    echo "$(date +%d/%m/%y\ %H:%M:%S) Erreur : L'installation n'a pas été correctement effectuée. Exécutez à nouveau l'installation."
     exit 1
 fi
 
