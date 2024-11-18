@@ -26,12 +26,12 @@ if [ ! -f "$PRIVATE_KEY_FILE" ] || [ ! -f "$PUBLIC_KEY_FILE" ]; then
     echo "$(date +%d/%m/%y\ %H:%M:%S) Clés générées et sauvegardées."
 else
     # Charger les clés existantes
-    echo "Chargement des clés WireGuard existantes..."
+    echo "$(date +%d/%m/%y\ %H:%M:%S) Chargement des clés WireGuard existantes..."
     CLIENT_PUBLIC_KEY=$(cat "$PUBLIC_KEY_FILE")
 fi
 
 # Envoyer la clé publique au serveur et récupérer la configuration
-echo "Envoi de la clé publique au serveur..."
+echo "$(date +%d/%m/%y\ %H:%M:%S) Envoi de la clé publique au serveur..."
 RESPONSE=$(curl -s -X POST "https://vpn01.home-ng.app/api/register" \
     -H "Authorization: Bearer $API_KEY" \
     -H "Content-Type: application/json" \
