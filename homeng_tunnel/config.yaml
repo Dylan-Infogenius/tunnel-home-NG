@@ -1,6 +1,6 @@
 ---
 name: Home-NG Tunneling
-version: 0.0.25
+version: 0.0.26
 slug: home-ng_tunneling
 description: Create tunnel
 url: https://github.com/Dylan-Infogenius/tunnel-home-NG/tree/main/homeng_tunnel
@@ -28,3 +28,4 @@ options:
 
 schema:
   api_key: str
+webui: http://[HOST]:[PORT:9324]
