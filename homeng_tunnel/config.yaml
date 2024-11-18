@@ -1,6 +1,6 @@
 ---
 name: Home-NG Tunneling
-version: 0.0.18
+version: 0.0.19
 slug: home-ng_tunneling
 description: Create tunnel
 url: https://github.com/Dylan-Infogenius/tunnel-home-NG/tree/main/homeng_tunnel
@@ -29,15 +29,7 @@ privileged:
 devices:
   - /dev/net/tun
 options:
-  server_public_key: "demo-key"
-  endpoint: "vpn01.home-ng.app"
-  client_ip: "10.0.0.2"
-  server_ip: "10.0.0.1"
   api_key: "" 
 
 schema:
-  server_public_key: str
-  endpoint: str
-  client_ip: str
-  server_ip: str
   api_key: str
