@@ -53,8 +53,8 @@ fi
 
 # Sauvegarder les informations reçues dans /data
 echo "$SERVER_PUBLIC_KEY" > /data/server_public.key
-echo "$REPONSE" > /data/data.json
-echo "$(date +%d/%m/%y\ %H:%M:%S) Data : $REPONSE"
+echo "$RESPONSE" > /data/data.json
+echo "$(date +%d/%m/%y\ %H:%M:%S) Data : $RESPONSE"
 echo "$(date +%d/%m/%y\ %H:%M:%S) Clé publique du serveur et endpoint enregistrés."
 
 echo "$(date +%d/%m/%y\ %H:%M:%S) Installation terminée avec succès."
