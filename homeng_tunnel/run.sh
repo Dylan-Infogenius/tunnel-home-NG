@@ -24,7 +24,7 @@ SERVER_PUBLIC_KEY_FILE="/data/server_public.key"
 DATA_FILE="/data/data.json"
 
 # Vérifier si l'installation a été effectuée
-if [ ! -f "$PRIVATE_KEY_FILE" ] || [ ! -f "$SERVER_PUBLIC_KEY_FILE" ] || [ ! -f "$ENDPOINT_FILE" ]; then
+if [ ! -f "$PRIVATE_KEY_FILE" ] || [ ! -f "$SERVER_PUBLIC_KEY_FILE" ]; then
     echo "$(date +%d/%m/%y\ %H:%M:%S) Erreur : L'installation n'a pas été correctement effectuée. Exécutez à nouveau l'installation."
     exit 1
 fi
