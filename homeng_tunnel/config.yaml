@@ -17,12 +17,6 @@ hassio_api: true
 hassio_role: manager
 stdin: true
 init: false
-ports:
-  80/tcp: null
-  51820/udp: 51820
-ports_description:
-  80/tcp: WireGuard peers status API
-  51820/udp: "WireGuard: forward this port in your router"
 hassio_api: true
 privileged:
   - NET_ADMIN
