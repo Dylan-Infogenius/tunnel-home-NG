@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 INSTALL_FLAG="/data/installed"
+rm -rf $INSTALL_FLAG
 
 # Vérifier si le hook d'installation doit être exécuté
 if [ ! -f "$INSTALL_FLAG" ]; then
