@@ -1,6 +1,6 @@
 ---
 name: Home-NG Tunneling
-version: 0.0.22
+version: 0.0.23
 slug: home-ng_tunneling
 description: Create tunnel
 url: https://github.com/Dylan-Infogenius/tunnel-home-NG/tree/main/homeng_tunnel
@@ -12,7 +12,7 @@ arch:
   - i386
 startup: application
 boot: auto
-webui: true
+webui: "http://dylan.home-ng.app:7123"
 homeassistant_api: true
 hassio_api: true
 hassio_role: manager
