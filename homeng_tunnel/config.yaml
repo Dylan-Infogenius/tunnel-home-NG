@@ -12,6 +12,7 @@ arch:
   - i386
 startup: application
 boot: auto
+ingress: true
 homeassistant_api: true
 hassio_api: true
 hassio_role: manager
