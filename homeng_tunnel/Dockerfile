@@ -1,7 +1,7 @@
 FROM alpine:3.18
 
 # Installer WireGuard et dépendances
-RUN apk add --no-cache wireguard-tools bash jq
+RUN apk add --no-cache wireguard-tools bash jq curl
 
 # Copier le script de démarrage
 COPY run.sh /run.sh
